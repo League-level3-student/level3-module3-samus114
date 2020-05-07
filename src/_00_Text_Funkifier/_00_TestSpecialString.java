@@ -6,16 +6,10 @@ import org.junit.jupiter.api.Test;
 
 public class _00_TestSpecialString {
 
-	//1. Take a look at the TextFunkifier interface and 
-	//   the abstract class SpecialString. Notice that the
-	//   SpecialString class implements TextFunkifier. Then 
-	//   take a look at the BackwardsString class. Notice 
-	//   that it extends SpecialString. This means that is also
-	//   implements TextFunkifier. Therefore, it must overwrite the
-	//   funkifyText method.
+	//1. Take a look at the TextFunkifier interface and the abstract class SpecialString. Notice that the SpecialString class implements TextFunkifier. Then take a look at the BackwardsString class. Notice that it extends SpecialString.
+	//	 This means that is also implements TextFunkifier. Therefore, it must overwrite the funkifyText method.
 	
-	//2. Fill in the funkifyText method in the BackwardsString class
-	//   to make the JUnitTest pass.
+	//2. Fill in the funkifyText method in the BackwardsString class to make the JUnitTest pass.
 	@Test
 	public void testBackwardsString() {
 		SpecialString bs = new BackwardsString("This is a test");
@@ -38,6 +32,7 @@ public class _00_TestSpecialString {
 	//   the JUnitTest case below to test your customized Special String.
 	@Test
 	public void testCustomString() {
-	
+		SpecialString tcs = new CustomString("why not more tests?");
+	assertEquals("?StSeT ErOm tOn yHw", tcs.toString());
 	}
 }
